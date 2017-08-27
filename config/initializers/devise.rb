@@ -264,4 +264,5 @@ Devise.setup do |config|
 
   # ==> Warden configuration
   # see config/initializers/warden.rb
+  config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
 end
